@@ -23,8 +23,8 @@ def perform_web_search(query: str, max_results: int=6) -> List[Dict[str,str]]:
                 body = result.get('body') or ''
                 if title and href:
                     results.append({
-                        'title': title
-                        'href': href
+                        'title': title,
+                        'href': href,
                         'body': body
                     })
         return results
